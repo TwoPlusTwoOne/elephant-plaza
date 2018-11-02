@@ -1,0 +1,1 @@
+console.log('Mongo db url: ', process.env.MONGO)
