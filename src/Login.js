@@ -14,6 +14,13 @@ export class Login extends Component {
     this.handleSubmit = this.handleSubmit.bind(this)
   }
 
+  componentDidUpdate(prevProps) {
+    if (prevProps !== this.props) this.setState({
+      username: '',
+      password: '',
+    })
+  }
+
 
   handleSubmit(e) {
     e.preventDefault()
