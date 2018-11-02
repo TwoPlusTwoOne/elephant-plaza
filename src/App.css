@@ -22,6 +22,19 @@
   color: #61dafb;
 }
 
+.login > form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login > form > input {
+  margin: 10px 0;
+}
+
+.login > form > button {
+  margin: 10px 0;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
