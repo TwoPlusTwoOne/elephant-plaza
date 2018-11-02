@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './App.css'
 import { Login } from './Login'
 import { login } from './loginController'
+import './mongodb'
 
 export class App extends Component {
 
