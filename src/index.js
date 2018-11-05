@@ -3,8 +3,11 @@ import ReactDOM from 'react-dom'
 import './index.css'
 import { App } from './App'
 import * as serviceWorker from './serviceWorker'
+import { mongoProxy } from './proxies/mongoProxy'
 
 console.log('Mongo: ', process.env.MONGO)
+
+mongoProxy.setUri(process.env.MONGO)
 
 ReactDOM.render(<App/>, document.getElementById('root'))
 
