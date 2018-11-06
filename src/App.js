@@ -3,7 +3,7 @@ import './App.css'
 import { Login } from './Login'
 import { login } from './loginController'
 import './mongodb'
-import { mongoProxy } from './proxies/mongoProxy'
+import { mongoProxy } from './mongodb'
 
 export class App extends Component {
 
@@ -22,7 +22,7 @@ export class App extends Component {
   }
 
   render() {
-    console.log('mongoProxy:', mongoProxy.getUri())
+    mongoProxy.connect().then(console.log)
     return (
       <div className="App">
         <header className="App-header">
